@@ -54,14 +54,14 @@ return [
             ]) : [],
         ],
 
-        'finance' => [
+        'billsystem' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
             'host' => 'billsystemoldbpm.kokoerp.com',
             'port' => env('DB_PORT', '3306'),
             'database' => 'billsystem',
-            'username' => 'oper',
-            'password' => 'Abcde@2019',
+            'username' => 'billsystem-super',
+            'password' => 'NF4rmi4NgrJwM9WR',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -73,7 +73,6 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
-
         'clickhouse' => [
             'host' =>  env('CLICKHOUSE_HOST','127.0.0.1'),
             'port' => env('CLICKHOUSE_PORT','8123'),

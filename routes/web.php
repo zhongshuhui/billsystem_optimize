@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\ReceiveAgeController;
 use App\Http\Controllers\SeckillController;
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\ClickhouseController;
@@ -20,7 +21,9 @@ Route::get('/', function () {
 });
 
 Route::get('clickhouse/test', [ClickhouseController::class,'test'])->name('clickhouse.test');
-Route::get('seckill/test', [SeckillController::class,'test'])->name('clickhouse.test'); //秒杀
+Route::get('seckill/test', [SeckillController::class,'test'])->name('seckill.test'); //秒杀
 Route::get('job/start', [JobController::class,'start'])->name('job.start');
+Route::get('receiveAge/create', [ReceiveAgeController::class,'create'])->name('receiveAge/create');
+
 
 

@@ -13,6 +13,7 @@
         "laravel/horizon": "^5.18",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
+        "predis/predis": "^1.1",
         "smi2/phpclickhouse": "^1.5",
         "swooletw/laravel-swoole": "^2.13"
     },

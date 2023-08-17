@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 
-class SeckillController extends Controller
+class KillController extends Controller
 {
     /**
      * @param Request $request
@@ -40,5 +40,9 @@ class SeckillController extends Controller
         $order->goods_id = 1;
         $order->save();
         return true;
+    }
+
+
+    public function redis(){
     }
 }
